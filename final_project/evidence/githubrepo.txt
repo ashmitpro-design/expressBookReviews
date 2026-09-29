@@ -1,0 +1,6 @@
+﻿curl.exe -sS --fail https://api.github.com/repos/ashmitpro-design/expressBookReviews | ConvertFrom-Json | Select-Object full_name, fork, @{Name="parent.full_name";Expression={$_.parent.full_name}} | ConvertTo-Json
+{
+    "full_name":  "ashmitpro-design/expressBookReviews",
+    "fork":  true,
+    "parent.full_name":  "ibm-developer-skills-network/expressBookReviews"
+}

@@ -1,0 +1,6 @@
+curl.exe -sS -w "
+HTTP status: %{http_code}
+" -X POST http://127.0.0.1:5000/register -H "Content-Type: application/x-www-form-urlencoded" --data "username=ibm_demo_20260929&password=Disposable-course-test-42"
+{"message":"Registration successful. Please log in."}
+HTTP status: 201
+

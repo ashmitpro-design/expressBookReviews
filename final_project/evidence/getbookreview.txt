@@ -1,0 +1,6 @@
+curl.exe -sS -w "
+HTTP status: %{http_code}
+" http://127.0.0.1:5000/review/1
+{}
+HTTP status: 200
+

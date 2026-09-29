@@ -1,0 +1,12 @@
+curl.exe -sS -w "
+HTTP status: %{http_code}
+" -X PUT -b evidence/session.cookies http://127.0.0.1:5000/customer/auth/review/1?review=A%20powerful%20novel.
+{"message":"Review added or updated.","reviews":{"ibm_demo_20260929":"A powerful novel."}}
+HTTP status: 200
+
+curl.exe -sS -w "
+HTTP status: %{http_code}
+" -X PUT -b evidence/session.cookies http://127.0.0.1:5000/customer/auth/review/1?review=A%20powerful%20and%20memorable%20novel.
+{"message":"Review added or updated.","reviews":{"ibm_demo_20260929":"A powerful and memorable novel."}}
+HTTP status: 200
+
